@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div id="preloader">
+    <div class="spinner"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -191,46 +195,30 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nous Contacter</h2>
-                <p>Prenez rendez-vous ou contactez-nous pour plus d'informations</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Adresse</h4>
-                            <p>Rue 70 124, Quartier GASSI<br>7ème arrondissement,<br> N'Djamena,<br>Tchad</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4>Horaires</h4>
-                            <p>Lundi - Dimanche: 7/7 24h/24</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Téléphone/Email/Identification </h4>
-                            <p>+235 68 44 27 75  <br>cabinetraphaped@gmail.com <br> No 190/ONMT/99</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2>Contactez-nous</h2>
+      <p>Nous sommes disponibles pour répondre à toutes vos questions</p>
+    </div>
+    <div class="contact-form-wrapper">
+      <form action="https://formspree.io/f/mnnzveyj" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Votre nom" required />
         </div>
-    </section>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Votre email" required />
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -268,3 +256,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

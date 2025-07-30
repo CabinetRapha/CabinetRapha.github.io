@@ -133,3 +133,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 });
+
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  const body = document.body;
+
+  // Delay for aesthetic fade-in
+  setTimeout(() => {
+    preloader.style.opacity = '0';
+    preloader.style.visibility = 'hidden';
+    body.classList.add('fade-in');
+  }, 500);
+});
